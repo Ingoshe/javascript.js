@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area and Perimeter</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 300px 500px 300px;
+        background-color: brown;
+      }
+      header {
+        justify-content: center;
+      }
+      .ap {
+        padding: 50px 60px 100px 60px;
+        background-color: aqua;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        <u
+          ><strong
+            >Calculate<mark> Area</mark> and <mark>Perimeter</mark></strong
+          ></u
+        >
+      </p>
+    </section>
+    <section>
+      <header>
+        <h1><b>Area and Perimeter of Rectangle</b></h1>
+      </header>
+      <br />
+      <form class="ap">
+        <div>
+          <label for="length">Length</label>
+          <input type="text" id="length" />
+        </div>
+        <br />
+        <div>
+          <label for="width">Width</label>
+          <input type="width" id="width" />
+        </div>
+        <br />
+        <div>
+          <button onclick="area()">Calculate Area</button>
+          <button onclick="perimeter()">Calculate Perimeter</button>
+        </div>
+      </form>
+      <script>
+        function area() {
+          let length = parseFloat(document.getElementById("length").value);
+          let width = parseFloat(document.getElementById("width").value);
+          let area = length * width;
+          alert("Area:" + area);
+        }
+        function perimeter() {
+          let length = parseFloat(document.getElementById("length").value);
+          let width = parseFloat(document.getElementById("width").value);
+          let perimeter = 2 * (length + width);
+          alert("Perimeter:" + perimeter);
+        }
+      </script>
+    </section>
+  </body>
+</html>

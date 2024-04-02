@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Event</title>
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="handleSubmit(event)" id="form">
+        <h1>registration form</h1>
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" class="email" />
+        </div>
+        <br />
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <br />
+        <div>
+          <label for="confirmpassword">Confirm Password</label>
+          <input type="password" id="confirmpassword" name="confirmpassword" />
+        </div>
+        <br />
+        <button type="submit">Register</button>
+        <script>
+          function handleSubmit(event) {
+            event.preventDefault();
+            alert("Registration form submitted successfully");
+          }
+        </script>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change color of Div</title>
+    <style>
+      div {
+        background-color: aqua;
+      }
+      h1 {
+        color: brown;
+      }
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">
+      <h1 id="myHeader">Welcome to my website</h1>
+      <p id="text">I will be talking about myself</p>
+    </div>
+    <button onclick="changeBackground()">Change Div color</button>
+    <button onclick="changeColor()">Change h1 font color</button>
+    <button onclick="changeSize()">Change font size</button>
+    <script>
+      function changeBackground() {
+        let testDiv = document.getElementById("myDiv");
+        testDiv.style.backgroundColor = "blue";
+      }
+      function changeColor() {
+        let testDiv = document.getElementById("myHeader");
+        testDiv.style.color = "black";
+      }
+      function changeSize(){
+        let testDiv= document.getElementById("text");
+        testDiv.style.fontSize = "70px";
+      }
+    </script>
+  </body>
+</html>
+<!-- try random color change -->
